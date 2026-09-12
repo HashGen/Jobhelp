@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FormKit — Government Form Photo, Signature & Document Tools</title>
+  <meta name="description" content="FormKit is a simple browser-based toolkit for resizing, cropping and compressing photos, signatures, thumb impressions and documents for online forms.">
+  <meta name="keywords" content="photo resize, signature resize, image compressor, government form photo, signature compressor, PDF tools">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="./index.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="FormKit — Simple tools for online forms">
+  <meta property="og:description" content="Resize, crop and compress photos, signatures, thumb impressions and documents in your browser.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="./index.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <a class="brand" href="#home" aria-label="FormKit home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8.5 3.5h7M5 7.5h14M6.5 20.5h11a1.5 1.5 0 0 0 1.5-1.5V6.8A1.8 1.8 0 0 0 17.2 5H6.8A1.8 1.8 0 0 0 5 6.8V19a1.5 1.5 0 0 0 1.5 1.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M8 10h8M8 13.5h5M8 17h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span>FormKit</span>
+        </a>
+        <span class="brand-tag">Simple • Private • Fast</span>
+      </div>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+          <button class="nav-item active" data-route="home">
+            <span class="nav-icon">⌂</span><span>Home</span>
+          </button>
+          <button class="nav-item" data-route="photo">
+            <span class="nav-icon">▣</span><span>Photo</span>
+          </button>
+          <button class="nav-item" data-route="signature">
+            <span class="nav-icon">✎</span><span>Signature</span>
+          </button>
+          <button class="nav-item" data-route="thumb">
+            <span class="nav-icon">◉</span><span>Thumb</span>
+          </button>
+          <button class="nav-item" data-route="declaration">
+            <span class="nav-icon">▤</span><span>Declaration</span>
+          </button>
+          <button class="nav-item" data-route="image">
+            <span class="nav-icon">⌁</span><span>Image Tools</span>
+          </button>
+          <button class="nav-item" data-route="pdf">
+            <span class="nav-icon">▦</span><span>PDF Tools</span>
+          </button>
+        </nav>
+        <div class="side-bottom">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </aside>
+
+      <main class="main" id="main">
+        <section id="home" class="page active-page">
+          <div class="hero">
+            <div>
+              <div class="eyebrow">ONLINE FORM TOOLKIT</div>
+              <h1>Get your files <span>form-ready.</span></h1>
+              <p>Resize, crop and compress photos, signatures and documents without complicated apps. Most image processing happens right in your browser.</p>
+              <div class="hero-actions">
+                <button class="btn primary" data-route="photo">Start with Photo</button>
+                <button class="btn subtle" data-route="signature">Prepare Signature</button>
+              </div>
+              <div class="trust-row">
+                <span>✓ No account</span>
+                <span>✓ Mobile friendly</span>
+                <span>✓ Browser processing</span>
+              </div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-orb"></div>
+              <div class="mini-window">
+                <div class="mini-top"><span></span><span></span><span></span></div>
+                <div class="mini-grid">
+                  <div class="mini-upload"><div class="mini-icon">↑</div><div>Drop file</div><small>JPG / PNG</small></div>
+                  <div class="mini-spec"><strong>50 KB</strong><small>Target size</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-head">
+            <div><h2>Tools</h2><p>Everything in one clean workspace.</p></div>
+          </div>
+          <div class="tool-grid">
+            <button class="tool-card" data-route="photo"><span class="tool-svg photo-svg">▣</span><span><strong>Photo</strong><small>Crop, resize & compress</small></span><span class="chev">›</span></button>
+            <button class="tool-card" data-route="signature"><span class="tool-svg">✎</span><span><strong>Signature</strong><small>Make your sign upload-ready</small></span><span class="chev">›</span></button>
+            <button class="tool-card" data-route="thumb"><span class="tool-svg">◉</span><span><strong>Thumb Impression</strong><small>Crop & compress</small></span><span class="chev">›</span></button>
+            <button class="tool-card" data-route="declaration"><span class="tool-svg">▤</span><span><strong>Declaration</strong><small>Prepare handwritten files</small></span><span class="chev">›</span></button>
+            <button class="tool-card" data-route="image"><span class="tool-svg">⌁</span><span><strong>Image Tools</strong><small>Resize, convert & optimize</small></span><span class="chev">›</span></button>
+            <button class="tool-card" data-route="pdf"><span class="tool-svg">▦</span><span><strong>PDF Tools</strong><small>Create PDFs from images</small></span><span class="chev">›</span></button>
+          </div>
+
+          <div class="info-strip">
+            <div class="info-icon">i</div>
+            <div><strong>Privacy first.</strong> Your selected images are processed locally in supported tools. Nothing is uploaded by this static app.</div>
+          </div>
+        </section>
+
+        <section id="photo" class="page">
+          <div class="page-title"><div><div class="eyebrow">PHOTO</div><h1>Photo Resize & Compress</h1><p>Make a passport-style image fit your required dimensions and file size.</p></div></div>
+          <div class="workspace">
+            <div class="panel upload-panel">
+              <div class="dropzone" data-input="photoInput">
+                <input id="photoInput" type="file" accept="image/*" hidden>
+                <div class="upload-icon">↑</div><h3>Drop your photo here</h3><p>or tap to choose a file</p><button class="btn subtle" type="button">Choose Photo</button>
+                <span class="help">JPG, PNG, WEBP • Images stay on your device</span>
+              </div>
+            </div>
+            <div class="panel controls">
+              <div class="control-head"><h3>Settings</h3><span class="pill">Live preview</span></div>
+              <div class="control-grid">
+                <label>Width<input id="photoW" type="number" value="300" min="1"><span>px</span></label>
+                <label>Height<input id="photoH" type="number" value="400" min="1"><span>px</span></label>
+                <label>Max size<input id="photoKB" type="number" value="50" min="5"><span>KB</span></label>
+                <label>Format<select id="photoFormat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select></label>
+              </div>
+              <label class="check"><input id="photoLock" type="checkbox" checked> Lock aspect ratio</label>
+              <button class="btn primary full" id="photoProcess">Process Photo</button>
+              <div id="photoResult" class="result-card hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="signature" class="page">
+          <div class="page-title"><div><div class="eyebrow">SIGNATURE</div><h1>Signature Resize & Compress</h1><p>Clean up your signature and prepare a compact upload-ready image.</p></div></div>
+          <div class="workspace">
+            <div class="panel upload-panel">
+              <div class="dropzone" data-input="signatureInput">
+                <input id="signatureInput" type="file" accept="image/*" hidden>
+                <div class="upload-icon">✎</div><h3>Add your signature</h3><p>Use a clear photo or scan</p><button class="btn subtle" type="button">Choose Signature</button>
+                <span class="help">Best results: dark ink on a light background</span>
+              </div>
+            </div>
+            <div class="panel controls">
+              <div class="control-head"><h3>Settings</h3><span class="pill">Easy mode</span></div>
+              <div class="control-grid">
+                <label>Width<input id="sigW" type="number" value="300" min="1"><span>px</span></label>
+                <label>Height<input id="sigH" type="number" value="100" min="1"><span>px</span></label>
+                <label>Max size<input id="sigKB" type="number" value="20" min="5"><span>KB</span></label>
+                <label>Format<select id="sigFormat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select></label>
+              </div>
+              <label class="check"><input id="sigLock" type="checkbox"> Lock aspect ratio</label>
+              <button class="btn primary full" id="sigProcess">Process Signature</button>
+              <div id="sigResult" class="result-card hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="thumb" class="page">
+          <div class="page-title"><div><div class="eyebrow">THUMB IMPRESSION</div><h1>Thumb Impression</h1><p>Crop, resize and compress an impression image in a few taps.</p></div></div>
+          <div class="workspace">
+            <div class="panel upload-panel">
+              <div class="dropzone" data-input="thumbInput">
+                <input id="thumbInput" type="file" accept="image/*" hidden>
+                <div class="upload-icon">◉</div><h3>Add thumb image</h3><p>Use a sharp, evenly lit image</p><button class="btn subtle" type="button">Choose Image</button>
+                <span class="help">Plain light background works best</span>
+              </div>
+            </div>
+            <div class="panel controls">
+              <div class="control-head"><h3>Settings</h3><span class="pill">Fast</span></div>
+              <div class="control-grid">
+                <label>Width<input id="thumbW" type="number" value="300" min="1"><span>px</span></label>
+                <label>Height<input id="thumbH" type="number" value="300" min="1"><span>px</span></label>
+                <label>Max size<input id="thumbKB" type="number" value="50" min="5"><span>KB</span></label>
+                <label>Format<select id="thumbFormat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select></label>
+              </div>
+              <button class="btn primary full" id="thumbProcess">Process Thumb</button>
+              <div id="thumbResult" class="result-card hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="declaration" class="page">
+          <div class="page-title"><div><div class="eyebrow">DECLARATION</div><h1>Handwritten Declaration</h1><p>Prepare a declaration image after scanning or photographing it.</p></div></div>
+          <div class="workspace">
+            <div class="panel upload-panel">
+              <div class="dropzone" data-input="declInput">
+                <input id="declInput" type="file" accept="image/*" hidden>
+                <div class="upload-icon">▤</div><h3>Add declaration image</h3><p>Photo or scanned document</p><button class="btn subtle" type="button">Choose Declaration</button>
+                <span class="help">Keep the handwriting fully visible</span>
+              </div>
+            </div>
+            <div class="panel controls">
+              <div class="control-head"><h3>Settings</h3><span class="pill">Clean output</span></div>
+              <div class="control-grid">
+                <label>Width<input id="declW" type="number" value="1000" min="1"><span>px</span></label>
+                <label>Height<input id="declH" type="number" value="500" min="1"><span>px</span></label>
+                <label>Max size<input id="declKB" type="number" value="200" min="5"><span>KB</span></label>
+                <label>Format<select id="declFormat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option></select></label>
+              </div>
+              <label class="check"><input id="declGrayscale" type="checkbox"> Grayscale</label>
+              <button class="btn primary full" id="declProcess">Prepare Declaration</button>
+              <div id="declResult" class="result-card hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="image" class="page">
+          <div class="page-title"><div><div class="eyebrow">IMAGE TOOLS</div><h1>Image Tools</h1><p>General-purpose image conversion and optimization.</p></div></div>
+          <div class="workspace single">
+            <div class="panel">
+              <div class="inline-upload">
+                <input id="imageInput" type="file" accept="image/*" hidden>
+                <button class="btn subtle" id="imageChoose">Choose Image</button>
+                <span id="imageName">No image selected</span>
+              </div>
+              <div class="control-grid wide">
+                <label>Width<input id="imageW" type="number" placeholder="Auto" min="1"><span>px</span></label>
+                <label>Height<input id="imageH" type="number" placeholder="Auto" min="1"><span>px</span></label>
+                <label>Quality<input id="imageQuality" type="range" min="10" max="100" value="85"><span id="qualityVal">85%</span></label>
+                <label>Format<select id="imageFormat"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WEBP</option></select></label>
+              </div>
+              <button class="btn primary" id="imageProcess">Convert / Resize</button>
+              <div id="imageResult" class="result-card hidden"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="pdf" class="page">
+          <div class="page-title"><div><div class="eyebrow">PDF TOOLS</div><h1>Image to PDF</h1><p>Turn one or more images into a clean PDF directly in your browser.</p></div></div>
+          <div class="workspace single">
+            <div class="panel">
+              <input id="pdfInput" type="file" accept="image/*" multiple hidden>
+              <div class="dropzone compact" data-input="pdfInput">
+                <div class="upload-icon">▦</div><h3>Select images for your PDF</h3><p>You can select multiple images at once</p><button class="btn subtle" type="button">Choose Images</button>
+              </div>
+              <div class="file-list" id="pdfList"></div>
+              <div class="row-actions">
+                <button class="btn primary" id="makePdf">Create PDF</button>
+                <button class="btn subtle" id="clearPdf">Clear</button>
+              </div>
+              <div class="help">PDF creation uses a lightweight browser library loaded from a public CDN.</div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> FormKit</div>
+      <div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="disclaimer.html">Disclaimer</a><a href="contact.html">Contact</a></div>
+    </footer>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
